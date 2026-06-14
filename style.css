@@ -912,7 +912,7 @@ btn-submit:hover .btn-arrow {
   transform: translateY(-5px);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .navbar {
     display: flex;
     width: 100%;
