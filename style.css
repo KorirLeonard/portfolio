@@ -914,7 +914,7 @@ btn-submit:hover .btn-arrow {
   transform: translateY(-5px);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .navbar {
     display: flex;
     width: 100%;
@@ -936,6 +936,7 @@ btn-submit:hover .btn-arrow {
   }
   .nav-links.active {
     right: 0;
+    display: flex;
   }
   .navbar .nav-links li a:hover {
     background: none;
