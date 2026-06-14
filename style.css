@@ -952,12 +952,15 @@ btn-submit:hover .btn-arrow {
   }
   .menu-icon {
     display: block;
-    margin-top: 10px;
     z-index: 999;
+    margin: 20px;
+  }
+  .menu-icon span {
+    background: white;
   }
   .logo {
     font-size: 15px;
-    margin-left: 10px;
+    margin: 20px;
   }
   .nav-links.active {
     display: flex;
@@ -973,17 +976,18 @@ btn-submit:hover .btn-arrow {
     margin-top: 20px;
   }
   .paragraph .image {
+    position: relative;
     animation: fadein 1s ease-in-out;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: flex;
     margin-left: 8px;
   }
   .paragraph .image .image-box {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
