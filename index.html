@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>Korirdev.</h1>
+        </div>
+        <ul class="nav-links" id="navlinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="wraper">
+        <div>
+          <h1 class="intro">
+            Hi I'm <em>Korir Leonard</em><br />I'm a
+            <span class="span1"> </span>
+          </h1>
+        </div>
+
+        <div class="paragraph">
+          <p>
+            I create responsive, user-friendly websites using HTML, CSS,
+            JavaScript, and modern web technologies. Currently expanding my
+            skills through real-world projects and continuous learning.
+          </p>
+          <div class="image">
+            <div class="image-box">
+              <img src="lenny.png" alt="my photo" />
+            </div>
+          </div>
+        </div>
+
+        <div class="icons">
+          <div class="btn-box">
+            <a href="#projects"><button class="btn">View Projects</button></a>
+
+            <a href="#contact"><button class="btn">Contact Me</button></a>
+
+            <li class="li1">
+              <a
+                href="https://wa.me/254101395649"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+
+            <li class="li">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="li">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="li">
+              <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="about1">About Me</h2>
+      <p class="about-p">
+        I'm Leonard, a web developer passionate about building responsive and
+        user-friendly websites. Iwork with HTML, CSS, JavaScript, PHP, and
+        MySQL, and constantly learning and improving through hands-on projects
+        and consistent practice
+      </p>
+      <h1 class="what-i-do">WHAT I DO</h1>
+      <br />
+      <div class="container1">
+        <div class="container2">
+          <div class="contents">
+            <i class="fa-solid fa-code"></i><br />
+            <h2 class="container-info">Web Development</h2>
+            <p>
+              We build fast, responsive, and secure web applications tailored to
+              your business goals using modern coding standards.
+            </p>
+            <div class="bottom1">
+              <span>FRONTEND.BACKEND</span>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="contents">
+            <i class="fa-solid fa-pen-nib"></i><br />
+            <h2 class="container-info">UI/UX</h2>
+            <p>
+              We create intuitive user interfaces and engaging experiences
+              through research, wireframing, and user-centered design.
+            </p>
+            <div class="bottom1">
+              <span>DESIGN.PROTOTYPING</span>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="contents">
+            <i class="fa-solid fa-palette"></i> <br />
+            <h2 class="container-info">Graphic design</h2>
+            <p>
+              We craft compelling visual identities, brand assets, and marketing
+              materials that capture attention and communicate your message.
+            </p>
+            <div class="bottom1">
+              <span>BRANDING.PRINT</span>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="contents">
+            <i class="fa-solid fa-network-wired"></i> <br />
+            <h2 class="container-info">Networking</h2>
+            <p>
+              We design, simulate, and configure robust network topologies to
+              ensure secure, efficient, and scalable connectivity.
+            </p>
+            <div class="bottom1">
+              <span>CONFIG.SECURITY</span>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="contents">
+            <i class="fa-solid fa-database"></i> <br />
+            <h2 class="container-info">Database</h2>
+            <p>
+              We architect, optimize, and manage secure database solutions that
+              ensure data integrity, high availability, and rapid retrieval.
+            </p>
+            <div class="bottom1">
+              <span>MySQL.MSSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills-container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">technologies i work with</p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"></span>
+              <h3>HTML</h3>
+            </div>
+            <p>semantic structure & accessibility</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%"></div>
+              <span class="percent">90%</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"></span>
+              <h3>CSS</h3>
+            </div>
+            <p>Responsive & mordern UI design</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%"></div>
+              <span class="percent">85%</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"></span>
+              <h3>Javascript</h3>
+            </div>
+            <p>Interactivity & DOM manipulation</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%"></div>
+              <span class="percent">70%</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"></span>
+              <h3>MySQL</h3>
+            </div>
+            <p>Database Design & queries</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%"></div>
+              <span class="percent">75%</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"></span>
+              <h3>PHP</h3>
+            </div>
+            <p>Backend Development & APIs</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%"></div>
+              <span class="percent">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="start-strip">
+        <div class="strip-wraper">
+          <div class="start-num">5+</div>
+          <div class="start-label">Web Projects</div>
+        </div>
+        <div class="strip-wraper">
+          <div class="start-num">6</div>
+          <div class="start-label">Tech Skills</div>
+        </div>
+        <div class="strip-wraper">
+          <div class="start-num">2026</div>
+          <div class="start-label">Started Web Development</div>
+        </div>
+        <div class="strip-wraper">
+          <div class="start-num">24/7</div>
+          <div class="start-label">problem solving</div>
+        </div>
+
+        <div class="strip-wraper">
+          <div class="start-num">∞</div>
+          <div class="start-label">Passion for Coding</div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <h2>My projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Login & Signup System</h3>
+          <p>secure authentication system build with PHP and MySQL</p>
+          <p><strong>Tech</strong>HTML,CSS,JavaScript</p>
+          <a href="#">Live Demo</a>
+          <a href="#">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Weather Application</h3>
+          <p>Displays real-time weather data using weather API</p>
+          <p><strong>Tech</strong>HTML,CSS,JavaScript</p>
+          <a href="#">Live Demo</a>
+          <a href="#">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Contact form</h3>
+          <p>Responsive contact form with validation and PHP processing</p>
+          <p><strong>Tech</strong>PHP,HTML,CSS</p>
+          <a href="#">Live Demo</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrapper">
+        <section class="hero">
+          <div>
+            <p class="hero-label">// 05 - contact</p>
+            <h1 class="hero-title">
+              let's build <br /><em>something </em><br />great
+            </h1>
+            <div class="hero-status">
+              <span class="status dot"></span>Available for freelance and
+              collaboration
+            </div>
+          </div>
+          <div>
+            <p class="hero-desc">
+              Whether it's a project, opportunity, or just a conversationabout
+              Tech - my inbox is always open. Based in Eldoret, Kenya
+            </p>
+          </div>
+          <!--CHANNELS-->
+          <div class="channels" style="margin-top: 2rem">
+            <a href="kimutailenny7000@gmail.com" class="channel-card ch-email">
+              <div class="channel-icon">💬</div>
+              <div class="channel-info">
+                <div class="channel-label">Email</div>
+                <div class="channel-value">kimutailenny7000@gmail.com</div>
+              </div>
+              <span class="channel-arrow"> → </span>
+            </a>
+            <a href="#" class="channel-card ch-github">
+              <div class="channel-icon">🧧</div>
+              <div class="channel-info">
+                <div class="channel-label">GitHub</div>
+                <div class="channel-value">GitHub.com/Korir</div>
+              </div>
+              <span class="channel-arrow"> → </span>
+            </a>
+            <a href="#" class="channel-card ch-linkedin">
+              <div class="channel-icon">💼</div>
+              <div class="channel-info">
+                <div class="channel-label">LinkedIn</div>
+                <div class="channel-value">linkedin.com/in/korir</div>
+              </div>
+              <span class="channel-arrow"> → </span>
+            </a>
+            <a
+              href="https://wa.me/254799693844"
+              target="_blank"
+              class="channel-card ch-whatsapp"
+            >
+              <div class="channel-icon">📞</div>
+              <div class="channel-info">
+                <div class="channel-label">WhasApp</div>
+                <div class="channel-value">+254799693844</div>
+              </div>
+              <span class="channel-arrow"> → </span>
+            </a>
+          </div>
+          <br />
+          <!--DIVIDER-->
+          <div class="divider"></div>
+        </section>
+        <!--FORM SECTION-->
+        <section class="form-section">
+          <div class="form-header">
+            <p class="form-eyebrow">//Send message</p>
+            <h2 class="form-title">Drop me a <em>line</em></h2>
+          </div>
+          <form class="contactform" novalidate>
+            <div class="field" data-delay="0">
+              <label for="name">Full name</label>
+              <input type="text" id="name" placeholder="korir lenny" required />
+            </div>
+            <div class="field" data-delay="200">
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option value="" disabled selected>What's this about?</option>
+                <option>Freelance project</option>
+                <option>Job opportunity</option>
+                <option>Collaboration</option>
+                <option>Just say Hi 👋</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field-full">
+              <label for="budget">Budget (optional)</label>
+              <select id="budget">
+                <option value="" selected>Select a range</option>
+                <option>Under KES 10,000</option>
+                <option>KES 10,000 - 50,000</option>
+                <option>KES 50,000 - 100,000</option>
+                <option>KES 100,000+</option>
+                <option>Let's discuss</option>
+              </select>
+            </div>
+            <div class="field-full" data-delay="400">
+              <label for="message">Message</label>
+              <textarea
+                name=""
+                id="message"
+                class="message"
+                placeholder="Tell me about your project, idea, or question..."
+              ></textarea>
+            </div>
+            <div class="submit-row-field-full" data-delay="500">
+              <button type="submit" class="btn-submit">
+                Send message <span class="btn-arrow"> → </span></button
+              ><br />
+
+              <span class="submit-note">I Usually reply within 24 hrs</span>
+            </div>
+            <div class="success-msg" id="successMsg">
+              <span class="success-icon">✅</span>
+              <span class="success-text"
+                >Message send! I'll get back to you soon.</span
+              >
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-copy">© 2026 <span>Korir</span> – Eldoret, Kenya</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">whatsapp</a>
+        <a href="#">Support</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
