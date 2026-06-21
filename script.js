@@ -43,3 +43,37 @@ function erase() {
   }
 }
 type();
+
+// Initialize EmailJS
+emailjs.init("rr4hGJRQy1JOxhee5");
+
+// Contact form
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    document.getElementById("successMsg").style.display = "block";
+    const btn = document.querySelector(".btn-submit");
+    btn.disabled = true;
+    btn.innerHTML = "Sending...";
+
+    setTimeout(() => {
+      document.getElementById("successMsg").style.display = "none";
+    }, 5000);
+
+    emailjs
+      .sendForm(
+        "service_jnac27i", // Service ID
+        "template_1uxy1sn", // Template ID
+        this,
+      )
+      .then(() => {
+        document.getElementById("successMsg").style.display = "block";
+        this.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        alert("Failed to send message.");
+      });
+  });
