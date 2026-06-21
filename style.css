@@ -193,6 +193,7 @@ html {
   align-items: center;
   animation: faderight 0.9s ease-in-out;
   transition: all 0.3s;
+  overflow: hidden;
 }
 .btn-box .li1 {
   display: flex;
@@ -221,14 +222,18 @@ html {
   text-align: center;
   margin: 10px;
   color: #22c55e;
+  display: flex;
+  text-decoration: none;
 }
-.btn-box .fa-brands,
-.fa-solid {
+.btn-box .fa-brands {
   transition: all 0.3s;
   justify-content: center;
   text-align: center;
   align-items: center;
   margin: 10px;
+}
+.fa-facebook {
+  border-radius: 50%;
 }
 .li:hover {
   transform: translateY(-2px);
