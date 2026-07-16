@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="navbar">
         <div class="logo">
           <h1>Korirdev.</h1>
@@ -19,6 +19,7 @@
         <ul class="nav-links" id="navlinks">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -94,7 +95,7 @@
       </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about hidden" id="about">
       <h2 class="about1">About Me</h2>
       <p class="about-p">
         I'm Leonard, a web developer passionate about building responsive and
@@ -102,77 +103,162 @@
         MySQL, and constantly learning and improving through hands-on projects
         and consistent practice
       </p>
-      <h1 class="what-i-do">WHAT I DO</h1>
-      <br />
-      <div class="container1">
-        <div class="container2">
-          <div class="contents">
-            <i class="fa-solid fa-code"></i><br />
-            <h2 class="container-info">Web Development</h2>
+    </section>
+
+    <section id="services" class="services hidden">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <p class="section-subtitle">
+          I provide high-quality digital solutions that help individuals and
+          businesses establish a strong online presence.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-code"></i>
+            <h3>Frontend Development</h3>
             <p>
-              We build fast, responsive, and secure web applications tailored to
-              your business goals using modern coding standards.
+              Creating responsive, modern, and user-friendly websites using
+              HTML, CSS, JavaScript, and Bootstrap.
             </p>
-            <div class="bottom1">
-              <span>FRONTEND.BACKEND</span>
-            </div>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-server"></i>
+            <h3>Backend Development</h3>
+            <p>
+              Building secure and scalable server-side applications using
+              Node.js, Express.js, and MySQL.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Graphic Design</h3>
+            <p>
+              Designing professional posters, flyers, social media graphics,
+              logos, and branding materials.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive Web Design</h3>
+            <p>
+              Ensuring websites perform beautifully across desktops, tablets,
+              and mobile devices.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-tools"></i>
+            <h3>Website Maintenance</h3>
+            <p>
+              Keeping websites secure, updated, optimized, and running smoothly
+              with ongoing support.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-search"></i>
+            <h3>SEO Optimization</h3>
+            <p>
+              Improving website visibility through on-page SEO best practices
+              and performance optimization.
+            </p>
           </div>
         </div>
-        <div class="container2">
-          <div class="contents">
-            <i class="fa-solid fa-pen-nib"></i><br />
-            <h2 class="container-info">UI/UX</h2>
-            <p>
-              We create intuitive user interfaces and engaging experiences
-              through research, wireframing, and user-centered design.
-            </p>
-            <div class="bottom1">
-              <span>DESIGN.PROTOTYPING</span>
-            </div>
+      </div>
+      <div id="pricing" class="pricing">
+        <h2>Website Packages</h2>
+        <p>Affordable web solutions tailored to your needs.</p>
+
+        <div class="pricing-container">
+          <div class="price-card">
+            <h3>Landing Page</h3>
+            <h2>KSh 5,000</h2>
+            <ul>
+              <li>✔ 1 Responsive Page</li>
+              <li>✔ Contact Form</li>
+              <li>✔ Mobile Friendly</li>
+              <li>✔ Basic SEO</li>
+              <li>✔ 1 Revision</li>
+            </ul>
+            <a href="#contact" class="btn">Get Started</a>
           </div>
-        </div>
-        <div class="container2">
-          <div class="contents">
-            <i class="fa-solid fa-palette"></i> <br />
-            <h2 class="container-info">Graphic design</h2>
-            <p>
-              We craft compelling visual identities, brand assets, and marketing
-              materials that capture attention and communicate your message.
-            </p>
-            <div class="bottom1">
-              <span>BRANDING.PRINT</span>
-            </div>
+
+          <div class="price-card popular">
+            <span class="badge">Most Popular</span>
+            <h3>Business Website</h3>
+            <h2>KSh 15,000</h2>
+            <ul>
+              <li>✔ Up to 5 Pages</li>
+              <li>✔ Responsive Design</li>
+              <li>✔ Contact Form</li>
+              <li>✔ Google Maps</li>
+              <li>✔ Basic SEO</li>
+              <li>✔ 2 Revisions</li>
+            </ul>
+            <a href="#contact" class="btn">Get Started</a>
           </div>
-        </div>
-        <div class="container2">
-          <div class="contents">
-            <i class="fa-solid fa-network-wired"></i> <br />
-            <h2 class="container-info">Networking</h2>
-            <p>
-              We design, simulate, and configure robust network topologies to
-              ensure secure, efficient, and scalable connectivity.
-            </p>
-            <div class="bottom1">
-              <span>CONFIG.SECURITY</span>
-            </div>
+
+          <div class="price-card">
+            <h3>E-Commerce Store</h3>
+            <h2>KSh 35,000+</h2>
+            <ul>
+              <li>✔ Product Catalog</li>
+              <li>✔ Shopping Cart</li>
+              <li>✔ Secure Checkout</li>
+              <li>✔ Admin Dashboard</li>
+              <li>✔ Payment Integration</li>
+              <li>✔ SEO Optimization</li>
+            </ul>
+            <a href="#contact" class="btn">Get Started</a>
           </div>
-        </div>
-        <div class="container2">
-          <div class="contents">
-            <i class="fa-solid fa-database"></i> <br />
-            <h2 class="container-info">Database</h2>
-            <p>
-              We architect, optimize, and manage secure database solutions that
-              ensure data integrity, high availability, and rapid retrieval.
-            </p>
-            <div class="bottom1">
-              <span>MySQL.MSSQL</span>
-            </div>
+
+          <div class="price-card">
+            <h3>Portfolio Website</h3>
+            <h2>KSh 8,000</h2>
+            <ul>
+              <li>✔ Responsive Design</li>
+              <li>✔ Projects Showcase</li>
+              <li>✔ Contact Form</li>
+              <li>✔ Social Media Links</li>
+              <li>✔ Basic SEO</li>
+            </ul>
+            <a href="#contact" class="btn">Get Started</a>
+          </div>
+
+          <div class="price-card">
+            <h3>School Website</h3>
+            <h2>KSh 25,000+</h2>
+            <ul>
+              <li>✔ Multiple Pages</li>
+              <li>✔ News & Events</li>
+              <li>✔ Admissions Section</li>
+              <li>✔ Contact Forms</li>
+              <li>✔ Responsive Design</li>
+            </ul>
+            <a href="#contact" class="btn">Get Started</a>
+          </div>
+
+          <div class="price-card">
+            <h3>Custom Web Application</h3>
+            <h2>From KSh 50,000</h2>
+            <ul>
+              <li>✔ Custom Features</li>
+              <li>✔ Database Integration</li>
+              <li>✔ Authentication</li>
+              <li>✔ Admin Dashboard</li>
+              <li>✔ API Integration</li>
+            </ul>
+            <a href="#contact" class="btn">Request Quote</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="skills" id="skills">
+
+    <section class="skills hidden" id="skills">
       <div class="skills-container">
         <h2 class="section-title">Skills</h2>
         <p class="section-subtitle">Technologies I Work With</p>
@@ -260,33 +346,71 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="projects">
+    <section id="projects" class="projects hidden">
       <h2>My projects</h2>
       <div class="projects-grid">
         <div class="project-card">
           <h3>Login & Signup System</h3>
           <p>secure authentication system build with PHP and MySQL</p>
           <p><strong>Tech</strong>HTML,CSS,JavaScript</p>
-          <a href="#">Live Demo</a>
-          <a href="#">GitHub</a>
+          <a
+            href="https://korirleonard.github.io/Login-form/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/KorirLeonard/Login-form"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
         </div>
         <div class="project-card">
-          <h3>Weather Application</h3>
-          <p>Displays real-time weather data using weather API</p>
-          <p><strong>Tech</strong>HTML,CSS,JavaScript</p>
-          <a href="#">Live Demo</a>
-          <a href="#">GitHub</a>
+          <h3>Glow Beauty Salon Website</h3>
+          <p>
+            A modern and responsive beauty salon website showcasing services,
+            pricing, appointment booking, and contact information.
+          </p>
+
+          <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+
+          <a
+            href="https://korirleonard.github.io/Glow-beaty-salon/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Demo
+          </a>
+
+          <a
+            href="https://github.com/KorirLeonard/Glow-beaty-salon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
         <div class="project-card">
           <h3>Contact form</h3>
           <p>Responsive contact form with validation and PHP processing</p>
           <p><strong>Tech</strong>PHP,HTML,CSS</p>
-          <a href="#">Live Demo</a>
-          <a href="#">GitHub</a>
+          <a
+            href="https://korirleonard.github.io/Contact-Form/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/KorirLeonard/Contact-Form"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
         </div>
       </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact hidden" id="contact">
       <div class="wrapper">
         <section class="hero">
           <div>
@@ -314,7 +438,7 @@
               <div class="channel-icon">💬</div>
               <div class="channel-info">
                 <div class="channel-label">Email</div>
-                <div class="channel-value">kimutailenny7000@gmail.com</div>
+                <div class="channel-value">leonardkorir330@gmail.com</div>
               </div>
               <span class="channel-arrow"> → </span>
             </a>
@@ -351,7 +475,7 @@
             >
               <div class="channel-icon">📞</div>
               <div class="channel-info">
-                <div class="channel-label">WhasApp</div>
+                <div class="channel-label">WhatsApp</div>
                 <div class="channel-value">+254799693844</div>
               </div>
               <span class="channel-arrow"> → </span>
@@ -373,11 +497,12 @@
               <label for="name">Full name</label>
               <input
                 type="text"
-                id="Name"
+                id="name"
                 name="name"
                 placeholder="korir lenny"
                 required
               />
+              <small class="error" id="nameError"></small>
             </div>
             <div class="field">
               <label for="email">Email</label>
@@ -388,6 +513,7 @@
                 placeholder="your@email.com"
                 required
               />
+              <small class="error" id="emailError"></small>
             </div>
 
             <div class="field" data-delay="200">
@@ -400,6 +526,7 @@
                 <option>Just say Hi 👋</option>
                 <option>Other</option>
               </select>
+              <small class="error" id="subjectError"></small>
             </div>
             <div class="field-full">
               <label for="budget">Budget (optional)</label>
@@ -420,6 +547,7 @@
                 class="message"
                 placeholder="Tell me about your project, idea, or question..."
               ></textarea>
+              <small class="error" id="messageError"></small>
             </div>
             <div class="submit-row-field-full" data-delay="500">
               <button type="submit" class="btn-submit">
@@ -438,28 +566,64 @@
         </section>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer-copy">© 2026 <span>Korir</span> – Eldoret, Kenya</div>
-      <div class="footer-links">
-        <a href="#">Privacy</a>
-        <a
-          href="https://GitHub.com/KorirLeonard/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        <a
-          href="https://www.linkedin.com/in/leonard-korir"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn</a
-        >
-        <a href="https://wa.me/254799693844" target="_blank">whatsapp</a>
-        <a href="#">Support</a>
+
+    <footer class="footer hidden" id="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>Leonard Korir</h2>
+          <p>
+            Full Stack Web Developer, Graphic Designer & Video Editor passionate
+            about building modern, responsive and user-friendly digital
+            experiences.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Get In Touch</h3>
+
+          <p>📍 Eldoret, Kenya</p>
+          <p>📧 leonardkorir330@gmail.com</p>
+          <p>📞 +254 799 693 844</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Me</h3>
+
+          <div class="social-icons">
+            <a href="https://github.com/KorirLeonard" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/leonard-korir" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:leonardkorir330@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://wa.me/254799693844" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Leonard Korir. All Rights Reserved.</p>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
     <script src="script.js"></script>
   </body>
 </html>
