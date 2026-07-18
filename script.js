@@ -67,6 +67,7 @@ function clearError(inputId, errorId) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+  gtag("event", "form_submit");
 
   // Hide success message
   successMsg.style.display = "none";
@@ -194,3 +195,40 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
+
+document.getElementById("projectsBtn").addEventListener("click", function () {
+  gtag("event", "hire_me_click", {
+    event_category: "engagement",
+    event_label: "Projects Button",
+  });
+});
+document.getElementById("contactBtn").addEventListener("click", function () {
+  gtag("event", "hire_me_click", {
+    event_category: "engagement",
+    event_label: "contact Me Button",
+  });
+});
+document.getElementById("whatsappBtn").addEventListener("click", function () {
+  gtag("event", "whatsapp_click", {
+    event_category: "contact",
+    event_label: "WhatsApp Button",
+  });
+});
+document.getElementById("facebookBtn").addEventListener("click", function () {
+  gtag("event", "facebook_click", {
+    event_category: "contact",
+    event_label: "facebook Button",
+  });
+});
+document.getElementById("linkedinBtn").addEventListener("click", function () {
+  gtag("event", "linkedin_click", {
+    event_category: "contact",
+    event_label: "linkedin Button",
+  });
+});
+document.getElementById("githubBtn").addEventListener("click", function () {
+  gtag("event", "github_click", {
+    event_category: "contact",
+    event_label: "Github Button",
+  });
+});

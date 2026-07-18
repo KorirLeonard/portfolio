@@ -126,14 +126,19 @@
 
         <div class="icons">
           <div class="btn-box">
-            <a href="#projects"><button class="btn">View Projects</button></a>
+            <a href="#projects"
+              ><button class="btn" id="projectsBtn">View Projects</button></a
+            >
 
-            <a href="#contact"><button class="btn">Contact Me</button></a>
+            <a href="#contact"
+              ><button class="btn" id="contactBtn">Contact Me</button></a
+            >
 
             <li class="li1">
               <a
                 href="https://wa.me/254101395649"
                 target="_blank"
+                id="whatsappBtn"
                 rel="noopener noreferrer"
               >
                 <i class="fa-brands fa-whatsapp"></i>
@@ -144,6 +149,7 @@
               <a
                 href="https://GitHub.com/KorirLeonard/"
                 target="_blank"
+                id="githubBtn"
                 rel="noopener noreferrer"
                 ><i class="fa-brands fa-github"></i
               ></a>
@@ -152,12 +158,16 @@
               <a
                 href="https://www.linkedin.com/in/leonard-korir"
                 target="_blank"
+                id="linkedinBtn"
                 rel="noopener noreferrer"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </li>
             <li class="li">
-              <a href="https://facebook.com/kimutai korir" target="_blank"
+              <a
+                href="https://facebook.com/kimutai korir"
+                target="_blank"
+                id="facebookBtn"
                 ><i class="fa-brands fa-facebook" style="background: blue"></i
               ></a>
             </li>
@@ -170,7 +180,7 @@
       <h2 class="about1">About Me</h2>
       <p class="about-p">
         I'm Leonard, a web developer passionate about building responsive and
-        user-friendly websites. Iwork with HTML, CSS, JavaScript, PHP, and
+        user-friendly websites. Iwork with HTML, CSS, JavaScript, Node.js, and
         MySQL, and constantly learning and improving through hands-on projects
         and consistent practice
       </p>
@@ -383,12 +393,12 @@
           <div class="skill-card">
             <div class="skill-header">
               <span class="skill-icon"></span>
-              <h3>PHP</h3>
+              <h3>Node.js</h3>
             </div>
             <p>Backend Development & APIs</p>
             <div class="progress">
-              <div class="progress-bar" style="width: 80%"></div>
-              <span class="percent">80%</span>
+              <div class="progress-bar" style="width: 30%"></div>
+              <span class="percent">30%</span>
             </div>
           </div>
         </div>
@@ -505,6 +515,7 @@
             <a
               href="mailto:leonardkorir330@gmail.com?subject=project Inquiry"
               class="channel-card ch-email"
+              id="emailBtn"
             >
               <div class="channel-icon">💬</div>
               <div class="channel-info">
@@ -518,6 +529,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="channel-card ch-github"
+              id="githubBtn"
             >
               <div class="channel-icon">🧧</div>
               <div class="channel-info">
@@ -531,6 +543,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="channel-card ch-linkedin"
+              id="linkedinBtn"
             >
               <div class="channel-icon">💼</div>
               <div class="channel-info">
@@ -543,6 +556,7 @@
               href="https://wa.me/254799693844"
               target="_blank"
               class="channel-card ch-whatsapp"
+              id="whatsappBtn"
             >
               <div class="channel-icon">📞</div>
               <div class="channel-info">
@@ -643,9 +657,8 @@
         <div class="footer-brand">
           <h2>Leonard Korir</h2>
           <p>
-            Full Stack Web Developer, Graphic Designer & Video Editor passionate
-            about building modern, responsive and user-friendly digital
-            experiences.
+            Full Stack Web Developer & Graphic Designer passionate about
+            building modern, responsive and user-friendly digital experiences.
           </p>
         </div>
 
@@ -662,28 +675,40 @@
         <div class="footer-contact">
           <h3>Get In Touch</h3>
 
-          <p>📍 Eldoret, Kenya</p>
-          <p>📧 leonardkorir330@gmail.com</p>
-          <p>📞 +254 799 693 844</p>
+          <p>Eldoret, Kenya</p>
+          <p>leonardkorir330@gmail.com</p>
+          <p>+254 799 693 844</p>
         </div>
 
         <div class="footer-social">
           <h3>Follow Me</h3>
 
           <div class="social-icons">
-            <a href="https://github.com/KorirLeonard" target="_blank">
+            <a
+              href="https://github.com/KorirLeonard"
+              id="githubBtn"
+              target="_blank"
+            >
               <i class="fab fa-github"></i>
             </a>
 
-            <a href="https://linkedin.com/in/leonard-korir" target="_blank">
+            <a
+              href="https://linkedin.com/in/leonard-korir"
+              id="linkedinBtn"
+              target="_blank"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
 
-            <a href="mailto:leonardkorir330@gmail.com">
+            <a href="mailto:leonardkorir330@gmail.com" id="emailBtn">
               <i class="fas fa-envelope"></i>
             </a>
 
-            <a href="https://wa.me/254799693844" target="_blank">
+            <a
+              href="https://wa.me/254799693844"
+              id="whatsappBtn"
+              target="_blank"
+            >
               <i class="fab fa-whatsapp"></i>
             </a>
           </div>
