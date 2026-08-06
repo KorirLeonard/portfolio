@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -479,133 +481,273 @@ body {
   line-height: 1.7;
 }
 
-/* Pricing Section */
+/* ===========================
+   PROCESS / WHY / CTA SECTION
+   (replaces the old pricing packages)
+=========================== */
 
-.pricing {
+.sec {
   padding: 80px 10%;
   background: #111113;
-  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.pricing h2 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  margin-bottom: 10px;
+.sec .eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9a45c;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
-.pricing p {
-  color: #b8b0a0;
-  margin-bottom: 50px;
-  font-size: 1rem;
+.sec-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #efe9dd;
+  line-height: 1.2;
+  margin: 0 0 16px;
 }
 
-.pricing-container {
+.sec-title span {
+  color: #c9a45c;
+}
+
+.sec-sub {
+  font-size: 16px;
+  color: #9c9484;
+  max-width: 520px;
+  line-height: 1.7;
+  margin: 0 0 64px;
+}
+
+.process {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 80px;
 }
 
-.price-card {
+.step {
+  padding: 32px;
+  border: 1px solid #262019;
   position: relative;
-  border: 1px solid #9c9484;
-  border-radius: 18px;
-  padding: 35px 25px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: 0.35s ease;
-  overflow: hidden;
-  color: #efe9dd;
+  transition: background 0.2s ease;
 }
 
-.price-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(138, 106, 53, 0.18);
+.step:hover {
+  background: #17161a;
 }
 
-.price-card h3 {
-  font-size: 1.5rem;
-  color: #131113;
-  margin-bottom: 15px;
-}
-
-.price-card h2 {
-  color: #efe9dd;
-  font-size: 2.2rem;
-  margin-bottom: 25px;
-}
-
-.price-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 30px;
-}
-
-.price-card ul li {
-  padding: 12px 0;
-  border-bottom: 1px solid #3a352c;
-  color: #efe9dd;
-}
-
-.price-card ul li:last-child {
-  border-bottom: none;
-}
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  background: #8a6a35;
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 50px;
+.step-num {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #c9a45c;
   font-weight: 600;
-  transition: 0.3s ease;
+  margin-bottom: 16px;
+  display: block;
 }
 
-.btn:hover {
-  background: #a3813f;
-  transform: scale(1.05);
+.step-icon {
+  font-size: 28px;
+  color: #c9a45c;
+  margin-bottom: 12px;
+  display: block;
 }
 
-/* Featured Package */
-
-.popular {
-  border: 3px solid #8a6a35;
-  transform: scale(1.04);
+.step-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #efe9dd;
+  margin: 0 0 10px;
 }
 
-.popular:hover {
-  transform: scale(1.06) translateY(-10px);
+.step-desc {
+  font-size: 14px;
+  color: #9c9484;
+  line-height: 1.6;
+  margin: 0;
 }
 
-.badge {
+.process-divider {
+  border: none;
+  border-top: 1px solid #262019;
+  margin: 0 0 80px;
+}
+
+.why-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #efe9dd;
+  margin: 0 0 40px;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.reason {
+  padding: 28px 24px;
+  border: 1px solid #262019;
+  border-radius: 4px;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+  cursor: default;
+}
+
+.reason:hover {
+  border-color: #c9a45c;
+  transform: translateY(-4px);
+}
+
+.reason-icon {
+  font-size: 24px;
+  color: #c9a45c;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.reason-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #efe9dd;
+  margin: 0 0 8px;
+}
+
+.reason-desc {
+  font-size: 13px;
+  color: #9c9484;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cta-block {
+  background: #17161a;
+  border: 1px solid #262019;
+  border-radius: 4px;
+  padding: 48px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-block::before {
+  content: "";
   position: absolute;
-  top: 18px;
-  right: -40px;
-  background: #8a6a35;
-  color: #fff;
-  padding: 8px 45px;
-  transform: rotate(45deg);
-  font-size: 0.8rem;
-  font-weight: bold;
-  letter-spacing: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c9a45c, transparent);
 }
 
-/* Mobile */
+.cta-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #efe9dd;
+  margin: 0 0 12px;
+}
 
-@media (max-width: 768px) {
-  .pricing {
-    padding: 60px 20px;
+.cta-heading span {
+  color: #c9a45c;
+}
+
+.cta-sub {
+  font-size: 15px;
+  color: #9c9484;
+  margin: 0 0 32px;
+  line-height: 1.6;
+}
+
+.cta-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  background: transparent;
+  border: 1px solid #c9a45c;
+  color: #c9a45c;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: rgba(201, 164, 92, 0.08);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 32px;
+  background: transparent;
+  border: 1px solid #9c9484;
+  color: #9c9484;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #efe9dd;
+  color: #efe9dd;
+}
+
+.avail {
+  font-size: 13px;
+  color: #9c9484;
+  margin-bottom: 24px;
+}
+
+.avail-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #c9a45c;
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: pulseFade 2s infinite;
+}
+
+@keyframes pulseFade {
+  0%,
+  100% {
+    opacity: 1;
   }
-
-  .pricing h2 {
-    font-size: 2rem;
+  50% {
+    opacity: 0.4;
   }
+}
 
-  .price-card {
-    padding: 30px 20px;
+@media (max-width: 600px) {
+  .sec {
+    padding: 48px 20px;
   }
-
-  .price-card h2 {
-    font-size: 1.9rem;
+  .sec-title {
+    font-size: 28px;
+  }
+  .process {
+    grid-template-columns: 1fr;
+  }
+  .reasons {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -845,7 +987,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: #111113;
+  flex-shrink: 0;
 }
 
 .channel-info {
@@ -1022,6 +1166,12 @@ textarea {
   border-radius: 12px;
   grid-column: 1/-1;
   margin-top: 1rem;
+}
+
+.success-icon {
+  color: #c9a45c;
+  font-size: 1.4rem;
+  flex-shrink: 0;
 }
 
 /*=========================
@@ -1359,7 +1509,7 @@ textarea {
   }
   .btn-box .btn:hover {
     background: #c9a45c;
-    color: black;
+    color: #0b0a09;
     font-weight: 500;
     transform: scale(1.05);
   }
@@ -1528,8 +1678,6 @@ textarea {
    KEYFRAME ANIMATIONS
 =========================== */
 
-/* Staggered card entrance - reuses the existing .hidden/.show classes,
-   just adds a per-card delay so grids cascade in rather than moving as one block */
 .service-card.hidden,
 .skill-card.hidden,
 .project-card.hidden {
@@ -1586,8 +1734,6 @@ textarea {
   transition-delay: 0.45s;
 }
 
-/* Skill bars fill in on scroll instead of appearing pre-filled.
-   Each bar reads its target width from the --w custom property set inline. */
 @keyframes fillWidth {
   from {
     width: 0;
@@ -1607,7 +1753,6 @@ textarea {
   animation-play-state: running;
 }
 
-/* Gentle ambient float on the profile photo - subtle, not a gimmick */
 @keyframes floatY {
   0%,
   100% {
@@ -1622,8 +1767,6 @@ textarea {
   animation: floatY 5s ease-in-out infinite;
 }
 
-/* Soft ring pulse behind the profile photo, echoes the hero-status dot
-   without repeating the old neon-green glow */
 @keyframes ringPulse {
   0% {
     box-shadow: 0 0 0 0 rgba(201, 164, 92, 0.35);
@@ -1646,8 +1789,6 @@ textarea {
   pointer-events: none;
 }
 
-/* Gold sheen sweep on primary buttons - triggers once per hover,
-   reads as refined rather than a loading shimmer */
 @keyframes sheen {
   from {
     transform: translateX(-120%) skewX(-15deg);
@@ -1681,7 +1822,6 @@ textarea {
   animation: sheen 0.9s ease forwards;
 }
 
-/* Icon lift on service card hover - small, controlled micro-interaction */
 @keyframes iconPop {
   0% {
     transform: scale(1) rotate(0deg);
