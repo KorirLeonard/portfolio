@@ -24,6 +24,7 @@ html {
 }
 body {
   font-family: "Inter", sans-serif;
+  background: #111113;
 }
 
 .navbar {
@@ -287,10 +288,11 @@ body {
   color: white;
   padding: 10px 0;
   padding-bottom: 10px;
+  align-items: center;
 }
 .start-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   text-align: center;
 }
@@ -487,9 +489,9 @@ body {
 =========================== */
 
 .sec {
-  padding: 80px 10%;
+  padding: 80px 4%;
   background: #111113;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -752,8 +754,10 @@ body {
 }
 
 .skills {
-  padding: 80px 20px;
+  padding: 80px 4%;
   background: #111113;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .skills-container {
   margin: auto;
@@ -817,9 +821,11 @@ body {
 }
 
 #projects {
-  padding: 80px 20px;
-  background: #111113;
   color: white;
+  padding: 80px 4%;
+  background: #111113;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 #projects h2 {
   text-align: center;
@@ -886,7 +892,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1186,7 +1192,7 @@ textarea {
 }
 
 .footer-container {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
