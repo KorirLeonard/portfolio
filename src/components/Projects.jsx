@@ -10,6 +10,16 @@ const projects = [
   },
 
   {
+    title: "ApexCart",
+    description:
+      "A full-stack e-commerce application with product browsing, category filtering, search, shopping cart, JWT authentication, orders, and an admin dashboard.",
+    tech: ["React", "Tailwind CSS", "Node.js", "Express", "MySQL", "JWT"],
+    live: null,
+    github: "https://github.com/KorirLeonard/apexcart",
+    featured: true,
+  },
+
+  {
     title: "Glow Beauty Salon",
     description:
       "A modern responsive beauty salon website showcasing services, pricing, appointment information, and contact details.",
