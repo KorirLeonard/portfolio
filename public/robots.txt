@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://korirleonard.github.io/portfolio/sitemap.xml
