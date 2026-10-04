@@ -1,12 +1,44 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [status, setStatus] = useState("idle");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setStatus("sending");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    formData.append("access_key", "f23a688d-232c-433c-a0d7-ca1830eca605");
+    formData.append("subject", "New Portfolio Contact Message");
+    formData.append("from_name", formData.get("name"));
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <section id="contact" className="bg-slate-950 px-6 py-28 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        {/* Heading */}
         <div className="max-w-3xl">
           <div className="flex items-center gap-3">
             <span className="h-px w-10 bg-amber-400" />
-
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-400">
               Contact
             </p>
@@ -24,7 +56,6 @@ export default function Contact() {
         </div>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Contact information */}
           <div>
             <h3 className="text-2xl font-bold text-white">Get in touch</h3>
 
@@ -34,7 +65,6 @@ export default function Contact() {
             </p>
 
             <div className="mt-8 space-y-4">
-              {/* Email */}
               <a
                 href="mailto:leonardkorir330@gmail.com"
                 className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-900 p-5 transition duration-300 hover:border-amber-400/40">
@@ -50,7 +80,6 @@ export default function Contact() {
                 </div>
               </a>
 
-              {/* GitHub */}
               <a
                 href="https://github.com/KorirLeonard"
                 target="_blank"
@@ -68,7 +97,6 @@ export default function Contact() {
                 </div>
               </a>
 
-              {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/in/leonard-korir"
                 target="_blank"
@@ -86,7 +114,6 @@ export default function Contact() {
                 </div>
               </a>
 
-              {/* Location */}
               <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-900 p-5">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-lg text-amber-400">
                   ⌖
@@ -100,11 +127,11 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Contact form */}
           <div>
-            <form className="rounded-3xl border border-white/10 bg-slate-900 p-6 sm:p-8">
+            <form
+              onSubmit={handleSubmit}
+              className="rounded-3xl border border-white/10 bg-slate-900 p-6 sm:p-8">
               <div className="grid gap-5 sm:grid-cols-2">
-                {/* Name */}
                 <div>
                   <label
                     htmlFor="name"
@@ -122,7 +149,6 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* Email */}
                 <div>
                   <label
                     htmlFor="email"
@@ -134,14 +160,13 @@ export default function Contact() {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="you@example.com"
+                    placeholder="leonardkorir330@gmail.com"
                     required
-                    className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-amber-400"
+                    className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none transition placeholder:text-slate-600"
                   />
                 </div>
               </div>
 
-              {/* Subject */}
               <div className="mt-5">
                 <label
                   htmlFor="subject"
@@ -151,7 +176,7 @@ export default function Contact() {
 
                 <select
                   id="subject"
-                  name="subject"
+                  name="message_subject"
                   className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none transition focus:border-amber-400">
                   <option>Freelance Project</option>
                   <option>Job Opportunity</option>
@@ -161,7 +186,6 @@ export default function Contact() {
                 </select>
               </div>
 
-              {/* Message */}
               <div className="mt-5">
                 <label
                   htmlFor="message"
@@ -181,13 +205,26 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-6 w-full rounded-xl bg-amber-400 px-6 py-3.5 font-semibold text-slate-950 transition hover:bg-amber-300">
-                Send Message
+                disabled={status === "sending"}
+                className="mt-6 w-full rounded-xl bg-amber-400 px-6 py-3.5 font-semibold text-slate-950 transition hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-60">
+                {status === "sending" ? "Sending..." : "Send Message"}
               </button>
 
-              <p className="mt-4 text-center text-xs text-slate-500">
-                Your message will be handled securely.
-              </p>
+              {status === "success" && (
+                <p
+                  role="status"
+                  className="mt-4 text-center text-sm text-emerald-400">
+                  Message sent successfully. I'll get back to you soon.
+                </p>
+              )}
+
+              {status === "error" && (
+                <p
+                  role="alert"
+                  className="mt-4 text-center text-sm text-red-400">
+                  Something went wrong. Please try again or email me directly.
+                </p>
+              )}
             </form>
           </div>
         </div>
