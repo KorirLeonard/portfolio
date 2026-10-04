@@ -9,7 +9,8 @@ function About() {
 
             <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950 p-2 shadow-2xl">
               <img
-                src={`${import.meta.env.BASE_URL}lenny.webp`}
+                src={`${import.meta.env.BASE_URL}images/leonard-korir.webp
+`}
                 alt="Korir Leonard - Full Stack Web Developer"
                 className="h-[420px] w-[340px] rounded-2xl object-cover object-top sm:h-[500px] sm:w-[390px]"
               />

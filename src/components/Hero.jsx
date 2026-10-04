@@ -83,7 +83,8 @@ function Hero() {
             {/* Image container */}
             <div className="relative overflow-hidden rounded-3xl border border-amber-400/20 bg-slate-900 p-3 shadow-2xl">
               <img
-                src={`${import.meta.env.BASE_URL}lenny.webp`}
+                src={`${import.meta.env.BASE_URL}images/leonard-korir.webp
+`}
                 alt="Korir Leonard - Full Stack Web Developer"
                 className="h-[420px] w-[320px] rounded-2xl object-cover object-top sm:h-[500px] sm:w-[380px]"
               />

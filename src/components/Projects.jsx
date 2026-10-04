@@ -4,6 +4,7 @@ const projects = [
     description:
       "A full-stack booking platform with service management, customer bookings, authentication, email confirmations, and an admin dashboard.",
     tech: ["Node.js", "Express", "MySQL", "JavaScript"],
+    image: "car-wash-booking.png",
     live: "https://korirleonard.github.io/car-wash-booking-website/",
     github: "https://github.com/KorirLeonard/car-wash-booking-website",
     featured: true,
@@ -14,6 +15,7 @@ const projects = [
     description:
       "A full-stack e-commerce application with product browsing, category filtering, search, shopping cart, JWT authentication, orders, and an admin dashboard.",
     tech: ["React", "Tailwind CSS", "Node.js", "Express", "MySQL", "JWT"],
+    image: "apexcart.png",
     live: null,
     github: "https://github.com/KorirLeonard/apexcart",
     featured: true,
@@ -24,17 +26,9 @@ const projects = [
     description:
       "A modern responsive beauty salon website showcasing services, pricing, appointment information, and contact details.",
     tech: ["HTML", "CSS", "JavaScript"],
+    image: "glow-beauty-salon.png",
     live: "https://korirleonard.github.io/Glow-beaty-salon/",
     github: "https://github.com/KorirLeonard/Glow-beaty-salon",
-  },
-
-  {
-    title: "ResumeMatch AI",
-    description:
-      "An AI-powered resume analysis application that compares resumes with job descriptions and identifies relevant skills and ATS keywords.",
-    tech: ["Python", "FastAPI", "AI", "JavaScript"],
-    live: "https://web-production-9f8a0.up.railway.app",
-    github: "https://github.com/KorirLeonard/resume-matcher",
   },
 
   {
@@ -42,6 +36,7 @@ const projects = [
     description:
       "A Java practice project focused on user input, validation, conditional logic, comparison, and clean console-based interaction.",
     tech: ["Java", "OOP", "Git"],
+    image: "hello-java.png",
     live: null,
     github: "https://github.com/KorirLeonard/HelloWorld-Java",
   },
@@ -51,6 +46,7 @@ const projects = [
     description:
       "A responsive calculator built with vanilla JavaScript supporting basic arithmetic operations through a clean interface.",
     tech: ["HTML", "CSS", "JavaScript"],
+    image: "calculator.png",
     live: "https://korirleonard.github.io/calculator/",
     github: "https://github.com/KorirLeonard/calculator",
   },
@@ -60,6 +56,7 @@ const projects = [
     description:
       "A responsive contact form with client-side validation and a clean user-friendly interface.",
     tech: ["HTML", "CSS", "JavaScript"],
+    image: "contact-form.png",
     live: "https://korirleonard.github.io/Contact-Form/",
     github: "https://github.com/KorirLeonard/Contact-Form",
   },
@@ -96,14 +93,17 @@ export default function Projects() {
             <article
               key={project.title}
               className="group flex flex-col rounded-3xl border border-white/10 bg-slate-950 p-7 transition duration-300 hover:-translate-y-1 hover:border-amber-400/40">
-              {/* Top */}
-              <div className="flex items-start justify-between">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-amber-400/20 bg-amber-400/10 font-mono text-sm font-bold text-amber-400">
-                  {"</>"}
-                </div>
+              {/* Project Image */}
+              <div className="relative overflow-hidden rounded-2xl border border-white/10">
+                <img
+                  src={`${import.meta.env.BASE_URL}images/${project.image}`}
+                  alt={`${project.title} project built by Leonard Korir`}
+                  loading="lazy"
+                  className="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
+                />
 
                 {project.featured && (
-                  <span className="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-medium text-amber-400">
+                  <span className="absolute right-3 top-3 rounded-full border border-amber-400/30 bg-slate-950/90 px-3 py-1 text-xs font-medium text-amber-400 backdrop-blur-sm">
                     Featured
                   </span>
                 )}
